@@ -11,7 +11,7 @@ const Checkout = () => {
 
   return (
     <>
-    <div className='flex justify-around font-serif text-gray-800 p-4'>
+    <div className='flex justify-around font-serif text-gray-800 p-4 my-10'>
             <div className='max-w-[600px] border h-full'>
         <div className='m-10 border py-10 rounded-md'>
             {

@@ -20,7 +20,7 @@ const ProductDetails = () => {
 {
   isloading ? <i className="fa-solid fa-spinner fa-spin flex justify-center"></i> : product && (
     <>
-    <div className='flex overflow-hidden w-[1200px] my-10'>
+    <div className='flex overflow-hidden w-[1200px] m-auto my-10'>
     <div className='flex flex-col align-middle m-auto'>
       <div className='flex justify-center'>
       <img className='w-[50%] border border-grey rounded-md cursor-pointer' src={product.images[activeImage]} alt="" />
@@ -37,7 +37,7 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
-      <div className='w-[400px]'>
+      <div className=''>
       <p className='ml-5 text-2xl font-serif text-slate-600'>{product.name}</p>
       <p className='ml-5 mt-5 text-md font-serif text-slate-600 overflow-hidden w-[500px]'>{product.description}</p>
       <hr className='m-8 border-slate-600' />

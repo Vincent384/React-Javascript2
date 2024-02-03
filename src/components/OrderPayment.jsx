@@ -4,23 +4,26 @@ import { useCartContext } from '../Layout/contexts/cartcontext'
 
 export const OrderPayment = ({totalPrice,cart}) => {
     const [url, setUrl] = useState('https://js2-ecommerce-api.vercel.app/api/orders')
+    const [error, setError] = useState(false)
 
     const { setCart } = useCartContext()
     let navigate = useNavigate()
 
      const handleClick = () =>{
-        let sendOrder = {
+          let sendOrder = {
             products:[],
 
         };
+        if(cart.length === 0){
+          setError(true)
+          return
+        }
         cart.forEach((item) => {
           sendOrder.products.push({
            productId:item.product._id,
            quantity:item.quantity
           });
         });
-    
-        console.log(sendOrder);
     
         const postOrder = async () => {
           try {
@@ -70,12 +73,18 @@ export const OrderPayment = ({totalPrice,cart}) => {
                         <p className='text-sm'>Get your adress</p>
                     </div>
                 </div>
-               
+                
+                <div className='flex justify-between'>
                 <button onClick={handleClick} className='border px-5 py-2 bg-cyan-600
                  text-white rounded-md mt-3
-                  hover:bg-cyan-500 transition-colors'>
+                 hover:bg-cyan-500 transition-colors'>
                     Complete order on <span className='text-white bg-emerald-600 rounded-lg px-2 py-1'>{totalPrice}:-</span>
                     </button>                
+                    {
+                      error ? 
+                      <p className='mt-4 text-red-600'>Shopping cart is empty!</p> : '' 
+                    }
+                </div>
                 
             </div>
         </div>
