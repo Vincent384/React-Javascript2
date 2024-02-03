@@ -2,7 +2,7 @@
 
 E-Commerce Web Application with React
 
-Welcome to mine E-Commerce web application project built with React!
+Welcome to my E-Commerce web application project built with React!
 This application allows users to browse through products, add them to the shopping cart, and complete a fictional purchase transaction.
 
 Features
