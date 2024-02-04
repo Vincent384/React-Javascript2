@@ -10,3 +10,11 @@ Features
   -  Shopping Cart: Users can add products to the shopping cart, view the cart contents, and update quantities or remove items.
 
   -  Checkout Process: A simulated checkout process is available for users to complete a fictional purchase transaction.
+
+How to install
+
+- Download zip file and unpack it on your computer
+- start visual studio code and run through the terminal
+- enter:
+- npm install
+- npm run dev
