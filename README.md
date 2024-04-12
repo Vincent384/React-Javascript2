@@ -1,20 +1,18 @@
-E-Commerce Web Application with React
+Välkommen till mitt E-handelswebbapplikationsprojekt byggt med React!
+Denna applikation låter användare bläddra bland produkter, lägga till dem i varukorgen och slutföra en fiktiv köptransaktion.
 
-Welcome to my E-Commerce web application project built with React! 
-This application allows users to browse through products, add them to the shopping cart, and complete a fictional purchase transaction.
+Funktioner
 
-Features
+    Produktsökning: Användare kan bläddra bland olika produkter med detaljer såsom namn, pris och beskrivning.
 
-  -  Product Browsing: Users can browse through a variety of products with details such as name, price, and description.
+    Varukorg: Användare kan lägga till produkter i varukorgen, se varukorgens innehåll och uppdatera kvantiteter eller ta bort objekt.
 
-  -  Shopping Cart: Users can add products to the shopping cart, view the cart contents, and update quantities or remove items.
+    Utcheckningsprocess: En simulerad utcheckningsprocess finns tillgänglig för användare att slutföra en fiktiv köptransaktion.
 
-  -  Checkout Process: A simulated checkout process is available for users to complete a fictional purchase transaction.
+Hur man installerar
 
-How to install
-
-- Download zip file and unpack it on your computer
-- start visual studio code and run through the terminal
-- enter:
-- npm install
-- npm run dev
+    Ladda ner zip-filen och packa upp den på din dator.
+    Starta Visual Studio Code och kör genom terminalen.
+    Skriv in:
+        npm install
+        npm run dev
