@@ -4,7 +4,7 @@ export const GetFetchContext = createContext()
 
 const GetFetchContextProvider = ({ children }) => {
   const [shopList, setShopList] = useState([])
-  const [url, setUrl] = useState('https://js2-ecommerce-api.vercel.app/api/products')
+  const [url, setUrl] = useState('http://localhost:9999/api/products')
   const [isloading, setisLoading] = useState(false)
  useEffect(()=>{
    const getData = async () => {

@@ -12,6 +12,7 @@ import Register from './Layout/Auth/Register'
 import Home from './Layout/Public/Home' 
 import Checkout from './Layout/Public/Checkout'
 import OrderConfirmed from './Layout/Public/OrderConfirmed'
+import Private from './Layout/Auth/Private'
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
             path: 'register',
             element: <Register />,
           },
+          {
+            path:'private',
+            element:<Private/>,
+          }
         ],
       },
     ],

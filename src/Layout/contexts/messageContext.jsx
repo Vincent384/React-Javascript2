@@ -8,9 +8,7 @@ const MessageContextProvider = ({ children }) =>{
     const [url, setUrl] = useState('https://js2-ecommerce-api.vercel.app/api/messages')
     const [messageSuccess, setMessageSuccess] = useState(false)
 
-
-    
-        const postData = async (postMessage) => {
+     const postData = async (postMessage) => {
             try {
                 const res = await fetch('https://js2-ecommerce-api.vercel.app/api/messages',{
                     method: 'POST',

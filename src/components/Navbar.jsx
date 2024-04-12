@@ -13,7 +13,7 @@ export const Navbar = () => {
             <li><NavLink className='text-gray-600 [&.active]:underline m-4 hover:text-gray-800 transition-colors' to="/">Home</NavLink></li>
             <li><NavLink className='text-gray-600 [&.active]:underline m-4 hover:text-gray-800 transition-colors' to="/contact">Contact</NavLink></li>
             <li><NavLink className='text-gray-600 [&.active]:underline m-4 hover:text-gray-800 transition-colors' to="auth/login">Login</NavLink></li>
-            <li><NavLink className='text-gray-600 [&.active]:underline m-4 hover:text-gray-800 transition-colors' to="auth/register">register</NavLink></li>
+            <li><NavLink className='text-gray-600 [&.active]:underline m-4 hover:text-gray-800 transition-colors' to="auth/register">Register</NavLink></li>
             <Dropdown/>
         </ul>
     </div>

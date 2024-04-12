@@ -5,11 +5,15 @@ import { Footer } from '../components/Footer'
 import GetFetchContextProvider from './contexts/getfetchcontext'
 import MessageContextProvider from './contexts/messageContext'
 import CartContextProvider, { CartContext } from './contexts/cartcontext'
+import RegisterUserContextProvider from './contexts/registerUserContext'
+import LoginUserContextProvider from './contexts/loginUserContext'
 
 const RootLayout = () => {
   return (
     
       <div>
+        <LoginUserContextProvider>
+        <RegisterUserContextProvider>
         <CartContextProvider>
         <MessageContextProvider>
         <GetFetchContextProvider>
@@ -19,6 +23,8 @@ const RootLayout = () => {
         </GetFetchContextProvider>
         </MessageContextProvider>
         </CartContextProvider>
+        </RegisterUserContextProvider>
+        </LoginUserContextProvider>
       </div>
   
   )
